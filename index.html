@@ -5,10 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webpage</title>
 </head>
+<div style="border: 3px solid gold;">
+    <H1 style="text-align: center; color: gold; background-color: white;">Playlist BY Genre Creator</H1>
+</div>
+<link rel="styleshet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<P style="border: 2px solid gold;color: gold; background-color: white;">Below is a tool that will allow you to create a
+    music playlist basded on
+    your favorite genre, you enter your favorite
+    musical genre below, then enter your favorite artist and song for that genre and it will put it into an organized
+    table for you to view. </P>
 
-<body>
+<body class="container"
+    background="https://img.freepik.com/free-vector/stone-background-with-golden-strokes_125540-130.jpg?w=996&t=st=1678241553~exp=1678242153~hmac=ae959e8507eab7c81b1f1bbfa204cd4ec2bf8bd0c8ae4b21cf454437c6068454">
+
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-genre-name">Genre name</label>
+                        <input type="text" class="form-control" id="new-genre-name">
+                    </div>
+                </div>
+                <button id="new-genre" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div> <br>
+
+    <div id="genres">
+
+    </div>
+
+
+    <script src="genre.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
 
